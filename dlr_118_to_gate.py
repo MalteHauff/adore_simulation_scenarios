@@ -42,8 +42,9 @@ def generate_launch_description():
 
         # *create_simulated_vehicle_nodes(
         #     namespace="ego_vehicle_2",
-        #     start_pose=(606467.120, 5797321.700, 0.0),
-        #     goal_position=(606471.04, 5797161.11),
+        #     start_pose=(603629.97, 5793820.95, 0.0), #(606467.120, 5797321.700, 0.0),
+        #     goal_position=(602690.269417, 5794451.688224),  # (604648.800269, 5793014.614997), #(606471.04, 5797161.11),
+        #     #goal_position=(604648.800269, 5793014.614997), #(606471.04, 5797161.11),
         #     map_file=map_file,
         #     model_file=vehicle_model_file,
         #     controllable=True,
@@ -55,7 +56,7 @@ def generate_launch_description():
         *create_simulated_vehicle_nodes(
             namespace="ego_vehicle",
             start_pose=(603629.97, 5793820.95, 0.0), #(603422.386742, 5794560.174595, 0.0), # (606476.120, 5797321.700, 0.0),
-            goal_position=(602690.269417, 5794451.688224),  # (604648.800269, 5793014.614997), #(606471.04, 5797161.11),
+            goal_position=(602688.269417, 5794449.688224),  # (604648.800269, 5793014.614997), #(606471.04, 5797161.11),
             map_file=map_file,
             model_file=vehicle_model_file,
             controllable=True,
@@ -64,4 +65,18 @@ def generate_launch_description():
             controller=2,
             debug=False
         )
+        
+
+        # *create_simulated_vehicle_nodes(
+        #     namespace="ego_vehicle",
+        #     start_pose=(606476.120, 5797321.700, 0.0), #(603629.97, 5793820.95, 0.0), #(603422.386742, 5794560.174595, 0.0), # (606476.120, 5797321.700, 0.0),
+        #     goal_position=(604648.800269, 5793014.614997),  # (604648.800269, 5793014.614997), #(606471.04, 5797161.11), (603629.97, 5793820.95)
+        #     map_file=map_file,
+        #     model_file=vehicle_model_file,
+        #     controllable=True,
+        #     v2x_id=1,
+        #     vehicle_id=112,
+        #     controller=2,
+        #     debug=False
+        # )
     ])
